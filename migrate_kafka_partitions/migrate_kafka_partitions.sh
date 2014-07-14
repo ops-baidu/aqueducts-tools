@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 
-if [ $# -ne 3 ]; then
+# dongfang
+# 2014年 07月 14日 星期一 15:11:13 CST
+
+# example
+# ./migrate_kafka_partitions.sh nova_pb_topic 15,16,17,18,19
+
+if [ $# -ne 2 ]; then
   echo "usage: ./migrate_kafka_partitions.sh topic_name broker_id_list"
   exit 1
 fi
