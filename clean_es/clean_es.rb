@@ -6,6 +6,7 @@
 def getProducts()
   begin
     require 'rest-client'
+    require 'json'
     response = RestClient.get "http://api.aqueducts.baidu.com/v1/products/"
     ret = JSON.parse(response)
     products = []
@@ -14,7 +15,7 @@ def getProducts()
     end
     return products
   rescue Exception
-    return "red"
+    return []
   end
 end
 
@@ -34,7 +35,7 @@ products = getProducts
 products.each do |p|
   require 'date'
   now = Date.today
-  (14..60).to_a.each do |i|
+  (15..60).to_a.each do |i|
     index = "aqueducts_#{p}_#{(now - i).strftime("%Y-%m-%d")}"
     deleteESIndex(index)
   end
