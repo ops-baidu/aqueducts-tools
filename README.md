@@ -138,7 +138,8 @@ aqueducts_kpi_ruby:
 	getAllServices 函数，根据products获取所有相应的services
 	print_all_info 函数，打印所有信息，根据参数判断是否print prettily json 
 	...
-###	
+
+###     1.5 strom-tools.rb 	
 
 
 	
@@ -155,16 +156,17 @@ aqueducts_kpi_ruby:
 	email.rb
 
 ###	2.1  aqueducts_kpi_ruby / script / aqueducts_kpi_tool.rb
-
+	处理命令行的参数，并传递给Aqueducts_KPI_info类的实例
 
 ###	2.2 aqueducts_kpi_ruby / lib / aqueducts_kpi.rb
-
+	链接mongo数据库，并建立和aqueducts_kpi db 的联系
+	根据传入的数据查询mongo，统计相应信息
 
 ###	2.3 aqueducts_kpi_ruby / lib / table_kpi_avi.html.erb 
-
+	ruby erb文件，是发送邮件的模板
 
 ###	2.4  aqueducts_kpi_ruby / gen / email.rb 
-
+	填补erb文件中的变量，并发送邮件
 	
 	
 	
