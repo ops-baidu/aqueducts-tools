@@ -26,8 +26,9 @@ astream-tools：
 		list(-l):           list all topology
 		elasticsearch(-e):  es info for a perticular topology
 		kafka(-k):          data flow of kafka for a perticular topology
-		strom(-s):	        strom info for a topology
-		host(-h):			host list for a perticular topology
+		strom(-s):	    strom info for a topology
+		host(-h):	    host list for a perticular topology
+		
 	
 ### 1. list all topology name
 	$ ruby strom-tools.rb search topology --list
@@ -43,7 +44,6 @@ astream-tools：
 	$ ruby strom-tools.rb search topology --name sf_adcore --host
 
 ###	astream_tools.rb
-##      arguments default value:
 
 ### 1. print all product/service/period info in last 24 hours. --pretty means print info prettly in json
 	$ ruby astream_tools.rb search --pretty
