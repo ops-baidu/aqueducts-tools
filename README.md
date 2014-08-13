@@ -22,12 +22,12 @@ astream-tools：
 	argument:
 		topology
 	options list:
-		list(-l):           list all topology
-		elasticsearch(-e):  es info for a perticular topology
-		kafka(-k):          data flow of kafka for a perticular topology
-		strom(-s):	    strom info for a topology
-		host(-h):	    host list for a perticular topology
-		name(-n)	    topology name
+		list(-l):		list all topology
+		elasticsearch(-e):	es info for a perticular topology
+		kafka(-k):		data flow of kafka for a perticular topology
+		strom(-s):		strom info for a topology
+		host(-h):		host list for a perticular topology
+		name(-n):		topology name
 ### 1. list all topology name
 	$ ruby strom-tools.rb search topology --list
 	topology number: 22sf_deimos
@@ -56,13 +56,13 @@ aqueducts_kpi_ruby:
 	action:
 		search
 	options:
-		one(-on) 	default false
-		product(-p) 	default []
-		service(-s) 	default []
-		oneday(-o) 	default nil
-		from(-f) 	default yesterday current time to default current time
-		email(-e) 	default false
-		show(-sh) 	default false, show process detail
+		one(-on):	default false
+		product(-p):	default []
+		service(-s):	default []
+		oneday(-o):	default nil
+		from(-f):	default yesterday current time to default current time
+		email(-e):	default false
+		show(-sh):	default false, show process detail
 	default: kpi will exclude those new p/s
 
 ### 1. no argument,default time is yesterday
