@@ -27,6 +27,8 @@ astream-tools：
 	$ ruby strom-tools.rb search topology --name sf_adcore --host
 
 ###	astream_tools.rb
+##      arguments default value:
+
 ##	1. print all product/service/period info in last 24 hours. --pretty means print info prettly in json
 	$ ruby astream_tools.rb search --pretty
 ##	2. for a preticular product and service
