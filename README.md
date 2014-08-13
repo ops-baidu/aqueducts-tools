@@ -104,18 +104,39 @@ aqueducts_kpi_ruby:
 	astream_tools.rb  由thor构建的命令行工具。 
 	引用了：
 	astream-tools/lib/astream_es_data_process.rb 
+	
 	astream-tools/lib/astream_es_data_process.rb
 	引用了 
 	astream-tools/vender/gen-rb/product_service_info.rb 文件中的类
 	astream-tools/lib/astream_es_data.rb 
 
-	
+###	aqueducts-tools / astream-tools / vendor / gen-rb / product_service_info.rb
+	对于特定的 product service period 组合，该类的实例记录了详细信息
+	主要的属性有：
+	@product = pro  
+	@service = ser
+	@period  = per  # 1 or 60 
+	@total_pv = total  #总PV
+	@ave_response_time = ave_res  #平均响应时间
+	@ave_search_period = ave_ser  #查询时间区间平均值
+	@delay_pv_per = delay_pv      #查询时间大于timeout的pv百分比
+	@delay_pv_num = 0             #查询时间大于timeout的pv总数
+	@ave_delay_pv_response_time = ave_delay   #查询时间大于timeout的pv平均响应时间
+	@max_delay_response_time = max            #最大超时时间
+	@min_delay_response_time = min            #最小超时时间
+	@ave_delay_search_period = ave_ser_per    #超时查询，平均时间区间
 
-
+###	astream-tools/lib/astream_es_data.rb 	
+	search 函数，根据传入参数，从es中查询相应数据，返回array
+	buildJson 函数，构建用于查询es的json
+	turnToUnixTimeStamp 函数，将输入的20140708000000 时间转换成unix时间戳
 	
-	
-		
-	
+###	astream-tools/lib/astream_es_data_process.rb		
+	用于处理 astream_es_data 返回的查询结果。
+	get_es_data 函数，处理了from和to时间跨越两天的情况。
+	getAllProducts 函数，获取所有的product
+	getAllServices 函数，根据products获取所有相应的services
+	print_all_info 函数，打印所有信息，根据参数判断是否print prettily json 
 
 	
 	
