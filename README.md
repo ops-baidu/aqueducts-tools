@@ -83,8 +83,12 @@ aqueducts_kpi_ruby:
         1. emial sender and reciver can be modified in aqueducts_kpi_ruby/gen/email.rb line 34 and 35
         2. kip查询的时候会剔除前一天的脏数据。
 
+代码介绍：
+=================
+###	astream-tools
 
-	
+
+
 	
 	
 		
