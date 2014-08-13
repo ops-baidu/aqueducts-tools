@@ -3,7 +3,7 @@ aqueducts-tools
 
 astream tools and kpi tools by ruby.
 
-usage
+一 usage
 ================
 ### atream-tools 要求： 
 	1. 可以访问线上机器
@@ -83,9 +83,9 @@ aqueducts_kpi_ruby:
         1. emial sender and reciver can be modified in aqueducts_kpi_ruby/gen/email.rb line 34 and 35
         2. kip查询的时候会剔除前一天的脏数据。
 
-代码介绍：
+二 代码介绍：
 =================
-###	astream-tools struct
+###	1. astream-tools struct
 ###	astream-tools/script:
 
 	astream_tools.rb
@@ -101,7 +101,7 @@ aqueducts_kpi_ruby:
 	product_service_info.rb
 	...
 	
-	astream_tools.rb  由thor构建的命令行工具。 
+###	1.1 astream_tools.rb  由thor构建的命令行工具。 
 	引用了：
 	astream-tools/lib/astream_es_data_process.rb 
 	
@@ -110,7 +110,7 @@ aqueducts_kpi_ruby:
 	astream-tools/vender/gen-rb/product_service_info.rb 文件中的类
 	astream-tools/lib/astream_es_data.rb 
 
-###	aqueducts-tools / astream-tools / vendor / gen-rb / product_service_info.rb
+###	1.2 aqueducts-tools / astream-tools / vendor / gen-rb / product_service_info.rb
 	对于特定的 product service period 组合，该类的实例记录了详细信息
 	主要的属性有：
 	@product = pro  
@@ -126,19 +126,35 @@ aqueducts_kpi_ruby:
 	@min_delay_response_time = min            #最小超时时间
 	@ave_delay_search_period = ave_ser_per    #超时查询，平均时间区间
 
-###	astream-tools/lib/astream_es_data.rb 	
+###	1.3 astream-tools/lib/astream_es_data.rb 	
 	search 函数，根据传入参数，从es中查询相应数据，返回array
 	buildJson 函数，构建用于查询es的json
 	turnToUnixTimeStamp 函数，将输入的20140708000000 时间转换成unix时间戳
 	
-###	astream-tools/lib/astream_es_data_process.rb		
+###	1.4 astream-tools/lib/astream_es_data_process.rb		
 	用于处理 astream_es_data 返回的查询结果。
 	get_es_data 函数，处理了from和to时间跨越两天的情况。
 	getAllProducts 函数，获取所有的product
 	getAllServices 函数，根据products获取所有相应的services
 	print_all_info 函数，打印所有信息，根据参数判断是否print prettily json 
+	...
+###	
+
 
 	
+###	2. aqueducts_kpi_ruby struct 
+###	aqueducts_kpi_ruby/script:
+	aqueducts_kpi_tool.rb
+
+###	aqueducts_kpi_ruby/lib
+	aqueducts_kpi.rb
+	table_kpi_avi.html.erb
+
+###	aqueducts_kpi_ruby/gen
+	email.rb
+
+
+
 	
 	
 	
