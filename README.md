@@ -34,8 +34,41 @@ astream-tools：
 	$ ruby astream_tools.rb search --pretty --product sf --service adcore
 ###	3. set starttime and end time 
 	$ ruby astream_tools.rb search --pretty --product sf --service adcore --from 20140710123030 --to 20140711240000
+
+
+aqueducts_kpi_ruby:
+   进入script目录下：<br/>
+   note: kip查询的时候会剔除前一天的脏数据。
+	$ ls
+	aqueducts_kpi_tool.rb
+###	1. no argument,default time is yesterday
+	$ ruby aqueducts_kpi_tool.rb search_kpi
+###	2. search and email  kpi info in 2014-07-10, excepting product sf's services adcore vega
+	$ ruby aqueducts_kpi_tool.rb search_kpi --oneday 2014-07-10 -p sf,sf -s adcore,vega --email
+###	3. search kpi info in last 5 hours
+	$ ruby aqueducts_kpi_tool.rb search_kpi --from -5
+###	4. search kpi from 2014-07-10 00:00:00 to 2014-07-13 24:00:00
+	ruby aqueducts_kpi_tool.rb search_kpi --from 2014-07-11 --to 2014-07-13
+###	5. searh kpi in 2014-07-17 and show search process info
+	ruby aqueducts_kpi_tool.rb search_kpi --oneday 2014-07-17 --show
+###	6. search sf/adcore's kpi in 2014-07-10
+	ruby aqueducts_kpi_tool.rb search_kpi --one -p sf -s adcore --oneday 2014-07-10
+###	7. search sf/adcore, sf/vega, im/asp kpi info one by one
+	ruby aqueducts_kpi_tool.rb search_kpi --one --from -24 -p sf,sf,im  -s adcore,vega,asp --show
 	
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    
 	
