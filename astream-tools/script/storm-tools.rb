@@ -22,7 +22,7 @@ class Tools < Thor
   option :kafka, :type => :boolean, :aliases => :k, :banner => "no argument,return kafka out,in bytes"
   option :storm, :type => :numeric, :aliases => :s, :banner => "show frequency,1 is best"
   option :host, :type => :boolean, :aliases => :h, :banner => "no argument, return topology host list"
-  option :stream, :type => :boolean, :aliases => :m 
+  option :stream, :type => :boolean, :aliases => :m   #just for test 
   def search(arg)
     if arg == "topology"
       si = Storm_info.new
