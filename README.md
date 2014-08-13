@@ -10,9 +10,20 @@ aqueducts_kpi_ruby要求：可以访问线上机器，连接mongo数据
 
 astream-tools：
   进入 astream-tools/script 目录下面<br/>
-	$ls 
+	$ ls <br/>
 	astream_tools.rb strom-tools.rb
 ### strom-tools.rb
+	action:
+		search
+	argument:
+		topology
+	options list:
+		list(-l):           list all topology
+		elasticsearch(-e):  es info for a perticular topology
+		kafka(-k):          data flow of kafka for a perticular topology
+		strom(-s):	        strom info for a topology
+		host(-h):			host list for a perticular topology
+	
 ### 1. list all topology name
 	$ ruby strom-tools.rb search topology --list
 	topology number: 22sf_deimos
@@ -39,7 +50,18 @@ astream-tools：
 
 aqueducts_kpi_ruby:
    进入script目录下：<br/>
-   note: kip查询的时候会剔除前一天的脏数据。
+###	aqueducts_kpi_ruby
+	action:
+		search
+	options:
+		one(-on) 	default false
+		product(-p) default []
+		service(-s) default []
+		oneday(-o) 	default nil
+		from(-f) 	default yesterday current time to default current time
+		email(-e) 	default false
+		show(-sh) 	default false, show process detail
+	default: kpi will exclude those new p/s
 	$ ls
 	aqueducts_kpi_tool.rb
 ### 1. no argument,default time is yesterday
@@ -58,6 +80,7 @@ aqueducts_kpi_ruby:
 	ruby aqueducts_kpi_tool.rb search_kpi --one --from -24 -p sf,sf,im  -s adcore,vega,asp --show
 ##	NOTE:
         1. emial sender and reciver can be modified in aqueducts_kpi_ruby/gen/email.rb line 34 and 35
+        2. kip查询的时候会剔除前一天的脏数据。
 ### 简单介绍各个文件的作用：
 
 	
