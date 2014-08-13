@@ -62,8 +62,7 @@ aqueducts_kpi_ruby:
 		email(-e) 	default false
 		show(-sh) 	default false, show process detail
 	default: kpi will exclude those new p/s
-	$ ls
-	aqueducts_kpi_tool.rb
+
 ### 1. no argument,default time is yesterday
 	$ ruby aqueducts_kpi_tool.rb search_kpi
 ### 2. search and email  kpi info in 2014-07-10, excepting product sf's services adcore vega
