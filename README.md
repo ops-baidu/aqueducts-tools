@@ -10,7 +10,6 @@ aqueducts_kpi_ruby要求：可以访问线上机器，连接mongo数据
 
 astream-tools：
   进入 astream-tools/script 目录下面<br/>
-### usage
 	$ls 
 	astream_tools.rb strom-tools.rb
 ### strom-tools.rb
@@ -55,10 +54,14 @@ aqueducts_kpi_ruby:
 	ruby aqueducts_kpi_tool.rb search_kpi --one -p sf -s adcore --oneday 2014-07-10
 ###	7. search sf/adcore, sf/vega, im/asp kpi info one by one
 	ruby aqueducts_kpi_tool.rb search_kpi --one --from -24 -p sf,sf,im  -s adcore,vega,asp --show
+###	NOTE:
+        1. emial sender and reciver can be modified in aqueducts_kpi_ruby/gen/email.rb line 34 and 35
+###	简单介绍各个文件的作用：
+
 	
 	
 	
-	
+		
 	
 	
 	
