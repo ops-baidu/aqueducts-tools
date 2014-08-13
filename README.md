@@ -3,7 +3,7 @@ aqueducts-tools
 
 astream tools and kpi tools by ruby.
 
-一 usage
+(一) usage
 ================
 ### atream-tools 要求： 
 	1. 可以访问线上机器
@@ -83,7 +83,7 @@ aqueducts_kpi_ruby:
         1. emial sender and reciver can be modified in aqueducts_kpi_ruby/gen/email.rb line 34 and 35
         2. kip查询的时候会剔除前一天的脏数据。
 
-二 代码介绍：
+(二) 代码介绍：
 =================
 ###	1. astream-tools struct
 ###	astream-tools/script:
@@ -143,6 +143,7 @@ aqueducts_kpi_ruby:
 
 	
 ###	2. aqueducts_kpi_ruby struct 
+
 ###	aqueducts_kpi_ruby/script:
 	aqueducts_kpi_tool.rb
 
@@ -153,7 +154,16 @@ aqueducts_kpi_ruby:
 ###	aqueducts_kpi_ruby/gen
 	email.rb
 
+###	2.1  aqueducts_kpi_ruby / script / aqueducts_kpi_tool.rb
 
+
+###	2.2 aqueducts_kpi_ruby / lib / aqueducts_kpi.rb
+
+
+###	2.3 aqueducts_kpi_ruby / lib / table_kpi_avi.html.erb 
+
+
+###	2.4  aqueducts_kpi_ruby / gen / email.rb 
 
 	
 	
