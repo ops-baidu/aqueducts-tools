@@ -1,4 +1,4 @@
 aqueducts-tools
 ===============
 
-tools and scripts for aqueducts
+astream tools and kpi tools by ruby.
