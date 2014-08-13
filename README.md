@@ -85,8 +85,31 @@ aqueducts_kpi_ruby:
 
 代码介绍：
 =================
-###	astream-tools
+###	astream-tools struct
+###	astream-tools/script:
 
+	astream_tools.rb
+	strom-tools.rb 
+	
+###	astream-tools/lib:
+	astream_es_data.rb   
+	astream_es_data_process.rb
+	elasticsearch_data.rb
+	kafka_flow.rb
+	strom_info.rb
+###	astream-tools/vender/gen-rb:
+	product_service_info.rb
+	...
+	
+	astream_tools.rb  由thor构建的命令行工具。 
+	引用了：
+	astream-tools/lib/astream_es_data_process.rb 
+	astream-tools/lib/astream_es_data_process.rb
+	引用了 
+	astream-tools/vender/gen-rb/product_service_info.rb 文件中的类
+	astream-tools/lib/astream_es_data.rb 
+
+	
 
 
 	
