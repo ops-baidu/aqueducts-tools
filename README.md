@@ -12,7 +12,6 @@ usage
 	1. 可以访问线上机器，连接mongo数据
 	2. gem 'mongo'
 	3. gem 'bson_ext'
-
 astream-tools：
   进入 astream-tools/script 目录下面<br/>
 	$ ls <br/>
@@ -28,8 +27,7 @@ astream-tools：
 		kafka(-k):          data flow of kafka for a perticular topology
 		strom(-s):	    strom info for a topology
 		host(-h):	    host list for a perticular topology
-		
-	
+		name(-n)	    topology name
 ### 1. list all topology name
 	$ ruby strom-tools.rb search topology --list
 	topology number: 22sf_deimos
@@ -44,7 +42,6 @@ astream-tools：
 	$ ruby strom-tools.rb search topology --name sf_adcore --host
 
 ###	astream_tools.rb
-
 ### 1. print all product/service/period info in last 24 hours. --pretty means print info prettly in json
 	$ ruby astream_tools.rb search --pretty
 ### 2. for a preticular product and service
