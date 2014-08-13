@@ -57,8 +57,8 @@ aqueducts_kpi_ruby:
 		search
 	options:
 		one(-on) 	default false
-		product(-p) default []
-		service(-s) default []
+		product(-p) 	default []
+		service(-s) 	default []
 		oneday(-o) 	default nil
 		from(-f) 	default yesterday current time to default current time
 		email(-e) 	default false
