@@ -140,7 +140,7 @@ aqueducts_kpi_ruby:
 	...
 
 ###     1.5 strom-tools.rb 	
-
+	根据thrift定义的接口，查询信息。
 
 	
 ###	2. aqueducts_kpi_ruby struct 
