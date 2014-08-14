@@ -139,8 +139,9 @@ aqueducts_kpi_ruby:
 	print_all_info 函数，打印所有信息，根据参数判断是否print prettily json 
 	...
 
-###     1.5 strom-tools.rb 	
+###     1.5 strom-tools.rb 	thor构建的命令行工具
 	根据thrift定义的接口，查询信息。
+	引用了 lib/storm_info.rb 文件
 
 	
 ###	2. aqueducts_kpi_ruby struct 
@@ -155,7 +156,7 @@ aqueducts_kpi_ruby:
 ###	aqueducts_kpi_ruby/gen
 	email.rb
 
-###	2.1  aqueducts_kpi_ruby / script / aqueducts_kpi_tool.rb
+###	2.1  aqueducts_kpi_ruby / script / aqueducts_kpi_tool.rb  thor构建的命令行工具
 	处理命令行的参数，并传递给Aqueducts_KPI_info类的实例
 
 ###	2.2 aqueducts_kpi_ruby / lib / aqueducts_kpi.rb
