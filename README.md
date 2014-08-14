@@ -142,7 +142,9 @@ aqueducts_kpi_ruby:
 ###     1.5 strom-tools.rb 	thor构建的命令行工具
 	根据thrift定义的接口，查询信息。
 	引用了 lib/storm_info.rb 文件
-
+###	1.6 astream-tools / lib / storm_info.rb
+	通过thrift接口获取相应信息，具体接口及数据结构之间联系如下文件中：
+	 astream-tools / vendor / storm.thrift
 	
 ###	2. aqueducts_kpi_ruby struct 
 
