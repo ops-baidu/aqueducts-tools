@@ -71,7 +71,7 @@ aqueducts_kpi_ruby:
 	$ ruby aqueducts_kpi_tool.rb search_kpi --oneday 2014-07-10 -p sf,sf -s adcore,vega --email
 ### 3. search kpi info in last 5 hours
 	$ ruby aqueducts_kpi_tool.rb search_kpi --from -5
-### 4. search kpi from 2014-07-10 00:00:00 to 2014-07-13 24:00:00
+### 4. search kpi from 2014-07-11 00:00:00 to 2014-07-13 24:00:00
 	ruby aqueducts_kpi_tool.rb search_kpi --from 2014-07-11 --to 2014-07-13
 ### 5. searh kpi in 2014-07-17 and show search process info
 	ruby aqueducts_kpi_tool.rb search_kpi --oneday 2014-07-17 --show
