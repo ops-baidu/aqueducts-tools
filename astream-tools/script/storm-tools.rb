@@ -13,7 +13,7 @@ class Tools < Thor
    \x5  some examples:
    \x5  1. ruby strom-tools.rb search topology --list
    \x5     list all topolog names
-   \x5  2. ruby strom-tools.rb search topology --name sf  --host
+   \x5  2. ruby strom-tools.rb search topology --name sf_uc  --host
    \x5     list all hosts and cpu_num for sf
   LONGDESC
   option :list, :type => :boolean, :aliases => :l, :banner => "no argument,return topology name list" 
@@ -22,7 +22,7 @@ class Tools < Thor
   option :kafka, :type => :boolean, :aliases => :k, :banner => "no argument,return kafka out,in bytes"
   option :storm, :type => :numeric, :aliases => :s, :banner => "show frequency,1 is best"
   option :host, :type => :boolean, :aliases => :h, :banner => "no argument, return topology host list"
-  option :stream, :type => :boolean, :aliases => :m 
+  option :stream, :type => :boolean, :aliases => :m   #just for test 
   def search(arg)
     if arg == "topology"
       si = Storm_info.new
