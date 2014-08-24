@@ -1,4 +1,4 @@
-曲东方个人简历
+曲东方
 ===============
 
 基本信息
@@ -8,8 +8,8 @@
 1. 年龄: 27
 1. 邮箱: qudongfang@gmail.com
 1. 手机: 18511158693
-1. github: qudongfang@gmail.com
-1. weibo: 18511158693
+1. weibo: [http://weibo.com/castomer](http://weibo.com/castomer)
+1. github: [https://github.com/castomer](https://github.com/castomer)
 
 教育经历
 ---------
@@ -56,7 +56,7 @@
         1. log产生工具，控制log产生速率，模拟线上压力 
         1. elasticsearch集群过期数据清理工具
 
-* AStream(storm toplogy,github私有项目)
+* AStream(github私有项目)
 
     - 时间：2013.11 -- 2014.02
     - 语言：java
