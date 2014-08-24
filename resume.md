@@ -4,18 +4,18 @@
 基本信息
 ---------
 
-1. 性别: 男
-1. 年龄: 27
-1. 邮箱: qudongfang@gmail.com
-1. 手机: 18511158693
-1. weibo: [http://weibo.com/castomer](http://weibo.com/castomer)
-1. github: [https://github.com/castomer](https://github.com/castomer)
+- 性别: 男
+- 年龄: 27
+- 邮箱: qudongfang#gmail.com
+- 手机: 18511158693
+- weibo: [http://weibo.com/castomer](http://weibo.com/castomer)
+- github: [https://github.com/castomer](https://github.com/castomer)
 
 教育经历
 ---------
 
-1. 2005.09 -- 2009.06 河南城建学院 地理信息系统 本科
-1. 2010.09 -- 2013.06 南京师范大学 地图学与地理信息系统 硕士
+- 2005.09 -- 2009.06 河南城建学院 地理信息系统 本科
+- 2010.09 -- 2013.06 南京师范大学 地图学与地理信息系统 硕士
 
 项目经验
 ---------------
