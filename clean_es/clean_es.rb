@@ -25,6 +25,10 @@ def deleteESIndex(index)
     huadongURL = "http://10.202.6.12:8200/#{index}/" #huadong es vip
     begin
       RestClient.delete huabeiURL
+    rescue Exception
+    end
+
+    begin
       RestClient.delete huadongURL
     rescue Exception
     end
@@ -35,7 +39,7 @@ products = getProducts
 products.each do |p|
   require 'date'
   now = Date.today
-  (15..60).to_a.each do |i|
+  (7..90).to_a.each do |i|
     index = "aqueducts_#{p}_#{(now - i).strftime("%Y-%m-%d")}"
     deleteESIndex(index)
   end
