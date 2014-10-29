@@ -80,6 +80,7 @@ main (int argc, char **argv)
         ts.tv_nsec = interval;
         nanosleep(&ts, NULL);
       }
+//      printf("sleeped %d ns\n", interval);
     }
 
   } else {
